@@ -8,7 +8,7 @@ const ListCard = () => {
     useEffect(() => {
         const getContacts = async () => {
             try {
-                let response = await fetch("https://playground.4geeks.com/contact/agendas/Hector/contacts")
+                let response = await fetch(`https://playground.4geeks.com/contact/agendas/${store.userName}/contacts`)
                 let data = await response.json()
                 //console.log("data", data)
                 //data = data.contacts
@@ -43,7 +43,7 @@ const ListCard = () => {
             {store.contactos.length === 0 ? (
                 <p className="text-center text-muted">Cargando contactos...</p>
             ) : (
-                store.contactos.map((ele) => (
+                store.contactos?.map((ele) => (
                     <div key={ele.id}>
                         <div className="row px-5 py-1">
                             <div className="col-md-2 " >

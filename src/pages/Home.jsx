@@ -21,7 +21,9 @@ export const Home = () => {
 				//console.log(encontrado)
 				if(!encontrado.length){
                    try {
-					 let response = await fetch(`https://playground.4geeks.com/contact/agendas/${store.userName}`)
+					 let response = await fetch(`https://playground.4geeks.com/contact/agendas/${store.userName}`,{
+						method: "POST"
+					 })
 					 if(!response.ok){
 						throw new Error("Error Creando la Agenda")
 					 }

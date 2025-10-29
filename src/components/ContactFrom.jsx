@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ContactForm = () => {
+    const objAgenda = {
+       fullName: "",
+       email: "",
+       phone: "",
+       address: ""
+    }
+    const [newAgenda, setNewAgenda] = useState(objAgenda)
+  /*   setNewAgenda(prev => ({
+      ...prev,
+      fullName: "jorge sarabia"
+    }))
+    console.log("NEWAGENDA", newAgenda) */
+   /*  const createAgenda = async ()=>{
+
+
+    }
+ */
+
     return (
         <div className="card">
             <div className="card-header">
