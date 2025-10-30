@@ -45,7 +45,7 @@ export const Home = () => {
 	return (
 		<div className="container-fluid text-center1 mt-5 mb-5">
 			<ListCard />
-			<ContactForm />
+			<ContactForm/>
 		</div>
 	);
 }; 
