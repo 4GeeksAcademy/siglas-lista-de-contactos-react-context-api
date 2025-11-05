@@ -14,7 +14,7 @@ export const Navbar = () => {
 				</Link> */}
 				<div className="ms-auto">
 					<Link to={`/contactform/add`}>
-						<button className="btn btn-primary">Add new contact</button>
+						<button className="btn btn-success">Add new contact</button>
 					</Link>
 				</div>
 			</div>
